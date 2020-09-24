@@ -13,3 +13,11 @@ https://www.cnblogs.com/fsmly/p/10721433.html
 来源：简书
 著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。
 
+## questions
+
+1. fair mode/nonfair mode 区别
+   1. 获得锁的order不同。 
+   2. non fair mode 没有限制顺序，争抢式，但还是会受到重入约束。
+   3. fair mode 有顺序限制，fifo 队列。单读锁会block，如果有写锁住，或者写线程在等待。
+   4. 写线程是排他锁，所以如果有任何线程在等待，都会block住。
+2. 
